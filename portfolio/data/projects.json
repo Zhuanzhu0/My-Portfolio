@@ -4,7 +4,7 @@
             "id": 1,
             "title": "Soul Search",
             "description": "A powerful search application with advanced filtering and real-time results. Built with modern technologies for optimal performance.",
-            "image": "assets/projects/soul-search.png",
+            "image": "assets/projects/soul-search.png?v=2",
             "tags": [
                 "Next.js",
                 "Prisma",
@@ -19,7 +19,7 @@
             "id": 2,
             "title": "Pulse Guard",
             "description": "Project Pulse Guard from Team Shadow Commander. Developed with focus on performance and clean architecture.",
-            "image": "assets/projects/pulseguard.png",
+            "image": "assets/projects/pulseguard.png?v=2",
             "tags": [
                 "Web Development",
                 "Team Project"
@@ -32,7 +32,7 @@
             "id": 3,
             "title": "Vortex-Bin",
             "description": "Project Vortex-Bin. Advanced web platform with dynamic integrations.",
-            "image": "assets/projects/vortex-bin.png",
+            "image": "assets/projects/vortex-bin.png?v=2",
             "tags": [
                 "Web App"
             ],
