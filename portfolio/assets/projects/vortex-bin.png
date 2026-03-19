@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5E6C8" />
+      <stop offset="50%" stop-color="#D4AF37" />
+      <stop offset="100%" stop-color="#a68928" />
+    </linearGradient>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#141820" />
+      <stop offset="100%" stop-color="#0B0F1A" />
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="16" fill="url(#bg-grad)" stroke="#D4AF37" stroke-width="2" stroke-opacity="0.3"/>
+
+  <g transform="translate(12, 10)">
+    <!-- Bin Core Shape -->
+    <path d="M6 14 L34 14 L29 38 C28.5 40 27 41 25 41 L15 41 C13 41 11.5 40 11 38 Z" fill="none" stroke="url(#gold-grad)" stroke-width="4" stroke-linejoin="round"/>
+    
+    <!-- Top Lid -->
+    <path d="M2 14 L38 14" stroke="url(#gold-grad)" stroke-width="4.5" stroke-linecap="round"/>
+    
+    <!-- Lid Handle -->
+    <path d="M15 14 L15 8 C15 5.5 17 3.5 19.5 3.5 L20.5 3.5 C23 3.5 25 5.5 25 8 L25 14" fill="none" stroke="url(#gold-grad)" stroke-width="4" stroke-linecap="round"/>
+    
+    <!-- Connectivity Waves -->
+    <path d="M14 24 Q20 18 26 24" fill="none" stroke="#F5E6C8" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M16 30 Q20 26 24 30" fill="none" stroke="#F5E6C8" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="20" cy="35" r="2.5" fill="#F5E6C8"/>
+  </g>
+</svg>
