@@ -5,19 +5,39 @@
             "title": "Soul Search",
             "description": "A powerful search application with advanced filtering and real-time results. Built with modern technologies for optimal performance.",
             "image": "assets/projects/soul-search.png",
-            "tags": ["Next.js", "Prisma", "TypeScript", "Supabase"],
-            "liveUrl": "https://your-project-url.com",
-            "githubUrl": "https://github.com/yourusername/soul-search",
+            "tags": [
+                "Next.js",
+                "Prisma",
+                "TypeScript",
+                "Supabase"
+            ],
+            "liveUrl": "https://soul-search.vercel.app/",
+            "githubUrl": "#",
             "featured": true
         },
         {
             "id": 2,
-            "title": "Project Name",
-            "description": "Brief description of what this project does and the problem it solves.",
-            "image": "assets/projects/project2.png",
-            "tags": ["React", "Node.js", "MongoDB"],
-            "liveUrl": "#",
-            "githubUrl": "#",
+            "title": "Pulse Guard",
+            "description": "Project Pulse Guard from Team Shadow Commander. Developed with focus on performance and clean architecture.",
+            "image": "assets/projects/pulseguard.png",
+            "tags": [
+                "Web Development",
+                "Team Project"
+            ],
+            "liveUrl": "https://pulseguard-final.vercel.app/",
+            "githubUrl": "https://github.com/Zhuanzhu0/Team-Shadow-Commanders",
+            "featured": true
+        },
+        {
+            "id": 3,
+            "title": "Vortex-Bin",
+            "description": "Project Vortex-Bin. Advanced web platform with dynamic integrations.",
+            "image": "assets/projects/vortex-bin.png",
+            "tags": [
+                "Web App"
+            ],
+            "liveUrl": "https://vortex-bin.vercel.app/",
+            "githubUrl": "https://github.com/Zhuanzhu0/Vortex-bin",
             "featured": true
         }
     ]
