@@ -19,7 +19,7 @@
             "id": 2,
             "title": "Pulse Guard",
             "description": "Project Pulse Guard from Team Shadow Commander. Developed with focus on performance and clean architecture.",
-            "image": "assets/projects/pulseguard.png?v=2",
+            "image": "assets/projects/pulseguard.svg?v=3",
             "tags": [
                 "Web Development",
                 "Team Project"
@@ -32,7 +32,7 @@
             "id": 3,
             "title": "Vortex-Bin",
             "description": "Project Vortex-Bin. Advanced web platform with dynamic integrations.",
-            "image": "assets/projects/vortex-bin.png?v=2",
+            "image": "assets/projects/vortex-bin.svg?v=3",
             "tags": [
                 "Web App"
             ],
