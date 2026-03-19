@@ -1,0 +1,231 @@
+/* ============================
+   INTRO SCREEN STYLES
+   ============================ */
+
+.intro-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-primary);
+    transition: opacity 0.8s ease, visibility 0.8s ease, transform 0.8s ease;
+}
+
+.intro-screen.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+}
+
+#intro-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.intro-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.intro-title {
+    font-family: var(--font-heading);
+    font-size: clamp(4rem, 15vw, 10rem);
+    font-weight: 700;
+    letter-spacing: 0.3em;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.1em;
+}
+
+.intro-title .letter {
+    display: inline-block;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: letterFloat 3s ease-in-out infinite;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.intro-title .letter:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.intro-title .letter:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.intro-title .letter:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.intro-title .letter:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.intro-title .letter:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.intro-screen.loaded .intro-title .letter {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.intro-screen.loaded .intro-title .letter:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.intro-screen.loaded .intro-title .letter:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.intro-screen.loaded .intro-title .letter:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.intro-screen.loaded .intro-title .letter:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.intro-screen.loaded .intro-title .letter:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+@keyframes letterFloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.intro-tagline {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.intro-screen.loaded .intro-tagline {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease 0.8s, transform 0.6s ease 0.8s;
+}
+
+.intro-loader {
+    width: 200px;
+    height: 3px;
+    background: rgba(212, 175, 55, 0.2);
+    border-radius: 3px;
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.intro-screen.loaded .intro-loader {
+    opacity: 1;
+    transition: opacity 0.3s ease 0.5s;
+}
+
+.loader-bar {
+    height: 100%;
+    width: 0%;
+    background: var(--gradient);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+}
+
+.enter-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem 2.5rem;
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-primary);
+    background: transparent;
+    border: 2px solid var(--accent-primary);
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+}
+
+.intro-screen.loaded .enter-btn {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.6s ease 1.2s, transform 0.6s ease 1.2s;
+}
+
+.enter-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: var(--gradient);
+    transition: left 0.4s ease;
+    z-index: -1;
+}
+
+.enter-btn:hover {
+    border-color: transparent;
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(212, 175, 55, 0.4);
+}
+
+.enter-btn:hover::before {
+    left: 0;
+}
+
+.enter-btn svg {
+    transition: transform 0.3s ease;
+}
+
+.enter-btn:hover svg {
+    transform: translateX(5px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .intro-title {
+        letter-spacing: 0.15em;
+    }
+
+    .intro-tagline {
+        font-size: 0.9rem;
+        letter-spacing: 0.2em;
+    }
+
+    .enter-btn {
+        padding: 0.875rem 2rem;
+        font-size: 0.9rem;
+    }
+}

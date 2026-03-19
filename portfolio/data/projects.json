@@ -1,0 +1,24 @@
+{
+    "projects": [
+        {
+            "id": 1,
+            "title": "Soul Search",
+            "description": "A powerful search application with advanced filtering and real-time results. Built with modern technologies for optimal performance.",
+            "image": "assets/projects/soul-search.png",
+            "tags": ["Next.js", "Prisma", "TypeScript", "Supabase"],
+            "liveUrl": "https://your-project-url.com",
+            "githubUrl": "https://github.com/yourusername/soul-search",
+            "featured": true
+        },
+        {
+            "id": 2,
+            "title": "Project Name",
+            "description": "Brief description of what this project does and the problem it solves.",
+            "image": "assets/projects/project2.png",
+            "tags": ["React", "Node.js", "MongoDB"],
+            "liveUrl": "#",
+            "githubUrl": "#",
+            "featured": true
+        }
+    ]
+}

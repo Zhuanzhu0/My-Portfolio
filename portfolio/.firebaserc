@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "my-portfolio-zz",
+    "prod": "harsh-zz"
+  },
+  "targets": {},
+  "etags": {}
+}
