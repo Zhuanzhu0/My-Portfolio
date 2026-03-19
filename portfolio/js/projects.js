@@ -20,7 +20,7 @@ class ProjectsLoader {
 
     async loadProjects() {
         try {
-            const response = await fetch('data/projects.json');
+            const response = await fetch('data/projects.json?v=' + new Date().getTime());
             const data = await response.json();
             this.projectsData = data.projects || [];
 
